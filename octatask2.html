@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Task Tracker - Stay on Target!"</title>
+    <link rel="stylesheet" href="octatask2.css">
+</head>
+<body>
+    <header>
+        <center>
+        <h1>"Task Tracker - Stay on Target!"</h1>
+        </center>
+    </header>
+
+    <main>
+        <div class="task-form">
+            <label for="detail">Task to be done today:</label>
+            <input id="detail" type="text" placeholder="Enter your task...">
+            <label for="p">Priority (0 - max, 10 - min):</label>
+            <input id="p" type="number" min="0" max="10" placeholder="0">
+            <button type="submit" onclick="add()">Add</button>
+        </div>
+
+        <div id="task-list">
+            <!-- To-Do tasks will be dynamically added here -->
+        </div>
+    </main>
+
+    <script src="octatask2.js"></script>
+
+    <footer>
+        <h4>Author:Rohit Bharit </h4>
+      </footer>
+</body>
+</html>
